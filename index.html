@@ -22,7 +22,11 @@
       user-select: none;
     }
 
-
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
 
     .b-example-divider {
       height: 3rem;
@@ -61,12 +65,6 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
     #lpage {
       height: 100vh;
       width: 100%;
@@ -81,15 +79,28 @@
 <body>
 
   <header>
-    <div class="navbar-collapse navbar navbar-dark bg-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a href="#mainpage" class="navbar-brand d-flex align-items-baseline">HOME</a>
+        <a class="navbar-brand d-flex align-items-baseline" href="#mainpage">HOME</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarHeader">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <main id="mainpage">
@@ -97,7 +108,7 @@
       <div id="lpage" class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-medium display-1 text-nowrap">Nepo Aquino</h1>
-          <p class="lead text-muted">Aspiring Web Developer</p>
+          <p class="lead text-muted" style="font-size: 30px;">Aspiring Web Developer</p>
           <p>
             <a href="#projects" class="btn btn-primary my-5">View my projects</a>
             <a href="https://neppy3250.github.io/neporesume.github.io/" target="_blank"
