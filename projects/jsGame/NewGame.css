@@ -1,0 +1,55 @@
+h1 {
+    font-size: 6vmin; 
+    text-align: center;
+    /*
+    font-size:calc(12px + 1.5vw);
+    font-size: max(1em, 12px);
+    */
+  }
+  body{ 
+    background-color: #aaa;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  } 
+
+  #canvas {
+    border: 1px solid red;
+    display: block;
+    margin:auto;
+    padding: 5px;
+    width: 40%;
+
+    }
+    .controler{
+        text-align: center;
+    }
+
+    #hiddenButton{   
+       border: none;
+       color: transparent;
+       display:hidden;
+       background-color: transparent;
+    }
+
+  button {
+   -webkit-user-select: none; /* Safari */
+   -ms-user-select: none; /* IE 10 and IE 11 */
+   user-select: none; /* Standard syntax */
+   min-width:75px;
+   min-height: 50px;
+   margin-bottom: 1px;      
+   font-size:medium ;
+   border-radius:15px;
+}
+
+@media only screen and (max-width: 600px) {
+    #canvas {
+      border: 1px solid red;
+      display: block;
+      margin:auto;
+      padding: 5px;
+      width: 95%;
+  
+      }
+}

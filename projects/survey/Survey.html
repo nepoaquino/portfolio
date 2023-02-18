@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Nepo Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+
+    <form id="survey-form"> 
+      <label id="name-label">Name 
+      <input id="name" type="text" required placeholder="Enter your name"></input>
+      </label>
+
+      <label id="email-label">Email 
+      <input id="email" type="email" required placeholder="Enter your email"></input> 
+      </label>
+
+      <label id="number-label">Age 
+      <input id="number" type="number" min="10" max="130" placeholder="Age"></input> 
+      </label>
+
+      <label> Which option best describes your current role?
+        <select id="dropdown">
+          <option value="">(select current role)</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+       <p>Would you recommend this software to a friend?</p>
+        <label class="Definitely">
+          <input 
+          type="radio" 
+          name="Group1" 
+          value="Definitely">
+          Definitely
+        </label>
+
+        <label class="Maybe">
+          <input 
+          type="radio" 
+          name="Group1" 
+          value="Maybe">
+          Maybe
+        </label>
+
+        <label class="Not-sure">
+          <input 
+          type="radio" 
+          name="Group1" 
+          value="Not sure">
+          Not sure
+        </label>
+
+  
+      <p>What is your favorite feature of this software?</p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+
+      <p>
+        What would you like to see improved? (Check all that apply)
+      </p>
+
+
+      <label class="option">
+        <input type="checkbox" value="Front-end-Projects" />Front-end Projects
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Back-end-Projects" />Back-end Projects
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Data-Visualization" />Data Visualization
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Challenges" />Challenges
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Open-Source-Community" />Open Source Community
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Gitter-help-rooms" />Gitter help rooms
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Videos" />Videos
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="City-Meetups" />City Meetups
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Wiki" />Wiki
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Forum" />Forum
+      </label>
+
+      <label class="option">
+        <input type="checkbox" value="Additional-Courses" />Additional Courses
+      </label>
+
+      <p>Any comments or suggestions?</p>
+       <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+
+      <button id="submit">Submit</button>
+    </form>
+
+</body>
+</html>

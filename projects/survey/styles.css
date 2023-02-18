@@ -1,0 +1,65 @@
+
+
+html, body{
+	color: white;
+}
+
+body{
+ 
+	margin:0;
+	position:relative;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(rgb(10, 10, 10), rgb(50, 50, 50));
+}
+
+label , p{
+	font-size: 18px;
+}
+
+#title, #description {
+	text-align: center;
+}
+
+#survey-form {
+  background: linear-gradient(rgb(70,70,70), rgb(40, 40, 40));
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+
+#name, #email, #number, #dropdown, .form-control {
+	display: block;	
+	width:100%;
+	height: 30px;
+	margin-top:5px ;	
+	margin-bottom:10px ;
+	border:0;
+	border-radius: 5px;
+}
+
+.Definitely, .Maybe, .Not-sure, .option{
+	display: block;	
+}
+
+.option {
+	margin-top: 5px;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  resize: vertical;
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color:#aaaaaa;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
