@@ -3,18 +3,39 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <meta property="og:title" content="My Personal Portfolio" />
   <meta property="og:image" content="img/thumbmail.png">
   <meta name="author" content="Nepo Aquino">
 
 
   <title>Nepo Aquino</title>
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
   <link href="bootstrap.min.css" rel="stylesheet">
 
   <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      margin-bottom: 2rem;
+      padding: 1rem;
+
+    }
+
+    .card:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      height: 100%;
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -67,7 +88,7 @@
     }
 
     #lpage {
-      height: 100vh;
+
       width: 100%;
       display: flex;
       justify-content: center;
@@ -81,6 +102,7 @@
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-black bg-gradient fixed-top">
+
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-baseline fw-bold" href="#mainpage">HOME</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
@@ -106,15 +128,15 @@
 
   <main id="mainpage">
     <section class="py-5 text-center container-fluid text-bg-dark bg-gradient ">
-      <div id="lpage" class="row py-lg-5">
+      <div id="lpage" class="row py-lg-5" style="min-height: 100vh;">
+
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-medium display-1 text-nowrap fs-re">Nepo Aquino</h1>
           <p class="lead text-white fs-2">Aspiring Web Developer</p>
           <p>
-            <a href="#projects" class="btn btn-primary my-1 mx-1">View my projects</a>
-            <a href="https://neppy3250.github.io/neporesume/" target="_blank" class="btn btn-secondary my-1 mx-1">View
-              my
-              resume</a>
+            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient ">View my projects</a>
+            <a href="https://neppy3250.github.io/neporesume/" target="_blank"
+              class="btn btn-secondary my-1 mx-1 bg-gradient">View my resume</a>
           </p>
         </div>
       </div>
@@ -127,161 +149,159 @@
 
     <div class="album py-5 bg-light bg-gradient">
       <div class="container">
-        <h2 class="text-black text-center display-5 fw-semibold pb-3 ">These are some of my projects<h2>
+        <h2 class="text-black text-center display-5 fw-semibold pb-3 ">These are some of my projects</h2>
 
-            <!-- Photo Gallery -->
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/photoGallery.PNG" class="img-thumbnail"></img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Flexbox Photo Gallery</span> is a layout model that
-                      allows elements to align and distribute space
-                      within a container. It's based on a flexible box concept where elements can be arranged in any
-                      direction, either vertically or horizontally.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/flexBox/FlexBox_PhotoGallery.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/flexBox"
-                          target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
+        <!-- Photo Gallery -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/photoGallery.PNG" class="img-thumbnail"></img>
+              <div class="card-body">
+                <p><span class="text-primary">Flexbox Photo Gallery</span> is a layout model that
+                  allows elements to align and distribute space
+                  within a container. It's based on a flexible box concept where elements can be arranged in any
+                  direction, either vertically or horizontally.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/flexBox/FlexBox_PhotoGallery.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/flexBox" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
                   </div>
                 </div>
               </div>
-
-              <!-- Registration Form -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/registrationForm.PNG" class="img-thumbnail"> </img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Registration Form</span> that consists of input
-                      fields for the user's
-                      name, email address, and password. The form may also include some client-side validation to ensure
-                      that the user enters valid data before submitting the form.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/registration/Registration_Form.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/registration"
-                          target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Simple Javascript Game -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/simpleJsGame.PNG" class="img-thumbnail"></img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Simple JavaScript Game</span> It involves creating a
-                      canvas element and
-                      using JavaScript to generate random coins within the canvas. The player would then control a
-                      character
-                      using arrow keys to move around the canvas and collect as many coins as possible.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/jsGame/simpleJsGame.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/jsGame" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- QUIZ -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/quiz.PNG" class="img-thumbnail"></img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Quiz Webpage</span> which includes a set of
-                      questions and answer choices
-                      presented on a webpage. Each question would have multiple choices and only one choice would be
-                      correct. Users would select their answer by clicking on the corresponding button for each
-                      question.
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/quiz/Building_A_Quiz.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/quiz" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Survey Form -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/surveyForm.PNG" class="img-thumbnail"></img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Survey Form</span> that allows users to input
-                      information and data for the
-                      purpose of research or feedback. It consists of questions related to a particular topic, and
-                      users can select their answers from predefined options or input their own responses..</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/survey/Survey.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/survey" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Balance Sheet -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="projectsScreenshot/balanceSheet.PNG" class="img-thumbnail"></img>
-                  <div class="card-body">
-                    <p class="card-text"><span class="text-primary">Balance Sheet</span> to display financial
-                      information
-                      in a structured way. The balance sheet consists of two categories, assets and liabilities, with
-                      the
-                      total for each displayed at the bottom. </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <form action="projects/balance/Balance_Sheet.html" target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
-                        </form>
-                        <form action="https://github.com/neppy3250/portfolio/tree/main/projects/balance"
-                          target="_blank">
-                          <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+          </div>
+
+          <!-- Registration Form -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/registrationForm.PNG" class="img-thumbnail"> </img>
+              <div class="card-body">
+                <p><span class="text-primary">Registration Form</span> that consists of input
+                  fields for the user's
+                  name, email address, and password. The form may also include some client-side validation to ensure
+                  that the user enters valid data before submitting the form.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/registration/Registration_Form.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/registration"
+                      target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simple Javascript Game -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/simpleJsGame.PNG" class="img-thumbnail"></img>
+              <div class="card-body">
+                <p><span class="text-primary">Simple JavaScript Game</span> It involves creating a
+                  canvas element and
+                  using JavaScript to generate random coins within the canvas. The player would then control a
+                  character
+                  using arrow keys to move around the canvas and collect as many coins as possible.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/jsGame/simpleJsGame.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/jsGame" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUIZ -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/quiz.PNG" class="img-thumbnail"></img>
+              <div class="card-body">
+                <p><span class="text-primary">Quiz Webpage</span> which includes a set of
+                  questions and answer choices
+                  presented on a webpage. Each question would have multiple choices and only one choice would be
+                  correct. Users would select their answer by clicking on the corresponding button for each
+                  question.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/quiz/Building_A_Quiz.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/quiz" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Survey Form -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/surveyForm.PNG" class="img-thumbnail"></img>
+              <div class="card-body">
+                <p><span class="text-primary">Survey Form</span> that allows users to input
+                  information and data for the
+                  purpose of research or feedback. It consists of questions related to a particular topic, and
+                  users can select their answers from predefined options or input their own responses..</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/survey/Survey.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/survey" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Balance Sheet -->
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="projectsScreenshot/balanceSheet.PNG" class="img-thumbnail"></img>
+              <div class="card-body">
+                <p><span class="text-primary">Balance Sheet</span> to display financial
+                  information
+                  in a structured way. The balance sheet consists of two categories, assets and liabilities, with
+                  the
+                  total for each displayed at the bottom. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <form action="projects/balance/Balance_Sheet.html" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Demo</button>
+                    </form>
+                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/balance" target="_blank">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
   </main>
 
-  <div class="container-fluid text-bg-light bg-gradient ">
+  <div class="container-fluid text-bg-light ">
 
 
     <section class="py-5 text-center container">
