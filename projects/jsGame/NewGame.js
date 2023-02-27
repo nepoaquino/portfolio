@@ -133,10 +133,6 @@ window.onload = function () {
 
     context.clearRect(0, 0, 750, 500);
 
-    context.font = "25px Arial";
-    context.fillStyle = "black";
-    context.fillText("Score: " + score, 20, 30);
-
     context.beginPath();
     context.rect(x, y, 100, 100);
     context.fillStyle = "#005000";
@@ -158,6 +154,10 @@ window.onload = function () {
     );
     context.fillStyle = "#E4D00A";
     context.fill();
+
+    context.font = "30px Arial";
+    context.fillStyle = "black";
+    context.fillText("Score: " + score, 20, 30);
 
     if (dir == 1) {
       // right direction
