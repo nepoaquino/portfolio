@@ -1,0 +1,139 @@
+html,
+body {
+  color: white;
+  background-color: #181b1d;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#main-doc {
+  position: relative;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#navbar {
+  position: fixed;
+  top: auto;
+  left: 0px;
+  max-width: 350px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  display: inline-block;
+}
+
+#mainHead {
+  margin: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+/* Style the scrollbar */
+#navbar ul::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Style the scrollbar thumb */
+#navbar ul::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Style the scrollbar track */
+#navbar ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: cornflowerblue;
+}
+
+#contents {
+  display: inline-block;
+  text-align: left;
+  margin-left: 30px;
+}
+
+#contents header {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 50px;
+  
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #232323;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  #main-doc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #navbar {
+    position: static;
+    max-width: none;
+    border-right: none;
+    display: block;
+  }
+  
+  #navbar ul {
+    height: auto;
+  }
+  
+  #contents {
+    margin-left: 0;
+  }
+  
+  #mainHead {
+    margin-top: 30px;
+
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #mainHead {
+    font-size: 1.5em;
+  }
+}
