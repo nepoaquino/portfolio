@@ -8,12 +8,15 @@
   <meta property="og:title" content="My Personal Portfolio" />
   <meta property="og:image" content="img/thumbmail.png">
   <meta name="author" content="Nepo Aquino">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
   <title>Nepo Aquino</title>
-  
+
   <style>
     html,
     body {
@@ -49,7 +52,9 @@
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
+
     }
+
 
     .b-example-divider {
       height: 3rem;
@@ -89,11 +94,15 @@
     }
 
     #lpage {
-
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .myName {
+      font-weight: 700;
+      font-size: 8vw;
     }
   </style>
 
@@ -130,178 +139,180 @@
   <main id="mainpage">
     <section class="py-5 text-center container-fluid text-bg-dark bg-gradient ">
       <div id="lpage" class="row py-lg-5" style="min-height: 100vh;">
-
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-medium display-1 text-nowrap fs-re">Nepo Aquino</h1>
+          <h1 class="fw-medium display-1 display-md-2 text-nowrap ">Nepo Aquino</h1>
           <p class="lead text-white fs-2">Aspiring Web Developer</p>
           <p>
-            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient ">View my projects</a>
+            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient " onclick="smoothScroll(event)">View my
+              projects</a>
             <a href="https://neppy3250.github.io/neporesume/" target="_blank"
               class="btn btn-secondary my-1 mx-1 bg-gradient">View my resume</a>
           </p>
         </div>
       </div>
     </section>
+  </main>
 
 
-    <div id="projects" class="p-3 bg-dark">
 
-    </div>
+  <div id="projects" class="p-3 bg-dark">
 
-    <div class="album py-5 bg-gradient " id="album">
-      <div class="container">
-        <h2 class="text-black text-center display-5 fw-semibold pb-3 ">These are some of my projects</h2>
+  </div>
 
-        <!-- Photo Gallery -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/photoGallery.PNG" class="img-thumbnail"></img>
-              <div class="card-body">
-                <p><span class="text-primary">Flexbox Photo Gallery</span> is a layout model that
-                  allows elements to align and distribute space
-                  within a container. It's based on a flexible box concept where elements can be arranged in any
-                  direction, either vertically or horizontally.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="projects/flexBox/FlexBox_PhotoGallery.html" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/flexBox" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
+  <div class="album py-5 bg-gradient " id="album">
+    <div class="container">
+      <h2 class="text-black text-center display-5 fw-semibold pb-3 ">These are some of my projects</h2>
+
+      <!-- Photo Gallery -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/photoGallery.PNG" class="img-thumbnail"></img>
+            <div class="card-body">
+              <p><span class="text-primary">Flexbox Photo Gallery</span> is a layout model that
+                allows elements to align and distribute space
+                within a container. It's based on a flexible box concept where elements can be arranged in any
+                direction, either vertically or horizontally.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="projects/flexBox/FlexBox_PhotoGallery.html" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/flexBox" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Birdie Bounce -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/birdie.PNG" class="img-thumbnail"></img>
-              <div class="card-body">
-                <p><span class="text-primary">Birdie Bounce</span> is based on the popular game "Flappy Bird".
-                  In this game, the player controls a bird that needs to navigate through a series of obstacles by
-                  flapping its wings.
-                  The objective is to get the bird as far as possible without hitting any obstacles.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="https://neppy3250.github.io/birdie-bounce/" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/birdie-bounce" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Simple Javascript Game -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/simpleJsGame.PNG" class="img-thumbnail"></img>
-              <div class="card-body">
-                <p><span class="text-primary">Simple JavaScript Game</span> It involves creating a
-                  canvas element and
-                  using JavaScript to generate random coins within the canvas. The player would then control a
-                  character
-                  using arrow keys to move around the canvas and collect as many coins as possible.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="projects/jsGame/simpleJsGame.html" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/jsGame" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Registration Form -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/registrationForm.PNG" class="img-thumbnail"> </img>
-              <div class="card-body">
-                <p><span class="text-primary">Registration Form</span> that consists of input
-                  fields for the user's
-                  name, email address, and password. The form may also include some client-side validation to ensure
-                  that the user enters valid data before submitting the form.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="projects/registration/Registration_Form.html" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/registration"
-                      target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <!-- Technical Documentation -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/documentation.PNG" class="img-thumbnail"></img>
-              <div class="card-body">
-                <p><span class="text-primary">Technical Documentation</span> that allows users to input
-                  information and data for the
-                  purpose of research or feedback. It consists of questions related to a particular topic, and
-                  users can select their answers from predefined options or input their own responses..</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="projects/documentation/documentation.html" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/documentation" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Balance Sheet -->
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="projectsScreenshot/balanceSheet.PNG" class="img-thumbnail"></img>
-              <div class="card-body">
-                <p><span class="text-primary">Balance Sheet</span> to display financial
-                  information
-                  in a structured way. The balance sheet consists of two categories, assets and liabilities, with
-                  the
-                  total for each displayed at the bottom. </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <form action="projects/balance/Balance_Sheet.html" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                    </form>
-                    <form action="https://github.com/neppy3250/portfolio/tree/main/projects/balance" target="_blank">
-                      <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Birdie Bounce -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/birdie.PNG" class="img-thumbnail"></img>
+            <div class="card-body">
+              <p><span class="text-primary">Birdie Bounce</span> is based on the popular game "Flappy Bird".
+                In this game, the player controls a bird that needs to navigate through a series of obstacles by
+                flapping its wings.
+                The objective is to get the bird as far as possible without hitting any obstacles.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="https://neppy3250.github.io/birdie-bounce/" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/birdie-bounce" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simple Javascript Game -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/simpleJsGame.PNG" class="img-thumbnail"></img>
+            <div class="card-body">
+              <p><span class="text-primary">Simple JavaScript Game</span> It involves creating a
+                canvas element and
+                using JavaScript to generate random coins within the canvas. The player would then control a
+                character
+                using arrow keys to move around the canvas and collect as many coins as possible.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="projects/jsGame/simpleJsGame.html" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/jsGame" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/registrationForm.PNG" class="img-thumbnail"> </img>
+            <div class="card-body">
+              <p><span class="text-primary">Registration Form</span> that consists of input
+                fields for the user's
+                name, email address, and password. The form may also include some client-side validation to ensure
+                that the user enters valid data before submitting the form.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="projects/registration/Registration_Form.html" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/registration" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Technical Documentation -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/documentation.PNG" class="img-thumbnail"></img>
+            <div class="card-body">
+              <p><span class="text-primary">Technical Documentation</span> that allows users to input
+                information and data for the
+                purpose of research or feedback. It consists of questions related to a particular topic, and
+                users can select their answers from predefined options or input their own responses..</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="projects/documentation/documentation.html" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/documentation"
+                    target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Balance Sheet -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="projectsScreenshot/balanceSheet.PNG" class="img-thumbnail"></img>
+            <div class="card-body">
+              <p><span class="text-primary">Balance Sheet</span> to display financial
+                information
+                in a structured way. The balance sheet consists of two categories, assets and liabilities, with
+                the
+                total for each displayed at the bottom. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <form action="projects/balance/Balance_Sheet.html" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
+                  </form>
+                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/balance" target="_blank">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
 
   </main>
 
@@ -339,19 +350,48 @@
       </div>
     </section>
 
-    <footer class="py-5">
+    <footer class="py-5 fs-5">
       <div class="container">
 
         <p class="mb-0">Email: <a href="mailto:nepo.comsci@gmail.com">nepo.comsci@gmail.com</a>.</p>
         <p class="mb-1 text-nowrap">&copy; 2023 Nepo Aquino. All Rights Reserved. </p>
         <p class="float-end mb-1">
-          <a href="#">Back to top</a>
+          <a href="#mainpage" onclick="smoothScroll(event)">Back to top</a>
         </p>
       </div>
     </footer>
   </div>
 
-  <script src="bootstrap.bundle.min.js"></script>
+  <script>
+
+    function smoothScroll(event) {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute("href");
+      const targetPosition = document.querySelector(targetId).offsetTop;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 1000;
+      let start = null;
+
+      function animation(currentTime) {
+        if (start === null) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
+    }
+  </script>
+
 
 </body>
 
