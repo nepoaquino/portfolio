@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JS Game</title>
-    <link rel="stylesheet" href="NewGame.css">
-    
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta name="author" content="Nepo Aquino" />
+  <meta property="og:url" content="https://neppy3250.github.io/portfolio/projects/jsGame/simpleJsGame.html?" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="jsGame" />
+  <meta property="og:description"
+    content="Simple JavaScript Game It involves creating a canvas element and using JavaScript to generate random coins within the canvas. The player would then control a character using arrow keys to move around the canvas and collect as many coins as possible. " />
+  <title>JS Game</title>
+  <link rel="stylesheet" href="NewGame.css">
+  <script src="NewGame.js"></script>
 
-<h1>Simple Javascript Game</h1>
+</head>
 
-    <canvas id="canvas" width="750" height="500">
-    
-    </canvas>
+<body>
+  <div id="canvas-container">
+    <canvas id="canvas" width="1200" height="800"> </canvas>
+  </div>
+
+  <!-- 
+  <div class="controler">
+    <button id="up-left">&#8598;</i></button>
+    <button id="up">&#8593;</button>
+    <button id="up-right">&#8599;</button> <br />
+    <button id="left">&#8592;</button>
+    <button id="hiddenButton">Hidden</button>
+    <button id="right">&#8594;</button> <br />
+    <button id="down-left">&#8601;</button>
+    <button id="down">&#8595;</button>
+    <button id="down-right">&#8600;</button>
+  </div>
+ -->
+
+ 
 
   
-    <br /><br />
+</body>
 
-      <div class="controler">
-          <button id="up-left">&#8598;</i></button>
-          <button id="up">&#8593;</button>
-          <button id="up-right">&#8599;</button>    <br />
-
-            <button id="left">&#8592;</button>
-              <button id="hiddenButton">Hidden</button>
-            <button id="right">&#8594;</button> <br />
-
-          <button id="down-left">&#8601;</button>
-          <button id="down">&#8595;</button>
-          <button id="down-right">&#8600;</button>
-      </div>
-
-      <script src="NewGame.js"></script>
-  </body>
 </html>
