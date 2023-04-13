@@ -18,86 +18,7 @@
   <title>Nepo Aquino</title>
 
   <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
 
-    .card {
-      margin-bottom: 2rem;
-      padding: 1rem;
-
-    }
-
-    .card:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
-
-    section {
-      height: 100%;
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    #lpage {
-
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   </style>
 
 </head>
@@ -107,8 +28,9 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-black bg-gradient fixed-top">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-baseline fw-bold" href="#mainpage" onclick="smoothScroll(event)">NEPO
-          AQUINO</a>
+        <a class="navbar-brand d-flex align-items-baseline fw-bold" href="#mainpage" onclick="smoothScroll(event)">
+          NEPO AQUINO
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -130,14 +52,16 @@
     </nav>
   </header>
 
+
   <main id="mainpage">
-    <section class="py-5 text-center container-fluid text-bg-dark bg-gradient ">
-      <div id="lpage" class="row py-lg-5" style="min-height: 100vh;">
+    <section class="py-5 text-center container-fluid text-bg-dark bg-gradient">
+      <div id="lpage" class="row py-lg-5"
+        style="min-height: 85vh; display: flex; justify-content: center; align-items: center;">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-medium display-1 display-md-2 text-nowrap ">Nepo Aquino</h1>
+          <h1 class="fw-medium display-1 display-md-2 text-nowrap">Nepo Aquino</h1>
           <p class="lead text-white fs-2">Aspiring Web Developer</p>
           <p>
-            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient " onclick="smoothScroll(event)">View my
+            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient" onclick="smoothScroll(event)">View my
               projects</a>
             <a href="https://neppy3250.github.io/neporesume/" target="_blank"
               class="btn btn-secondary my-1 mx-1 bg-gradient">View my resume</a>
@@ -146,8 +70,6 @@
       </div>
     </section>
   </main>
-
-
 
   <div id="projects" class="p-3 bg-dark">
 
@@ -209,8 +131,11 @@
           <div class="card shadow-sm">
             <img src="projectsScreenshot/colorGameSimulator.jpg" class="img-thumbnail"></img>
             <div class="card-body">
-              <p><span class="text-primary">Color Game Simulator</span> where the user selects colors and then rolls a set of dice with random colors. If the colors the user selected match any of the dice's colors, the user wins. 
-                Otherwise, the user loses. The game keeps track of the user's history of rolls and the colors they selected.</p>
+              <p><span class="text-primary">Color Game Simulator</span> where the user selects colors and then rolls a
+                set of dice with random colors. If the colors the user selected match any of the dice's colors, the user
+                wins.
+                Otherwise, the user loses. The game keeps track of the user's history of rolls and the colors they
+                selected.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <form action="https://neppy3250.github.io/colorGameSimulator/" target="_blank">
@@ -257,8 +182,9 @@
           <div class="card shadow-sm">
             <img src="projectsScreenshot/documentation.PNG" class="img-thumbnail"></img>
             <div class="card-body">
-              <p><span class="text-primary">Technical Documentation</span> in JavaScript is a set of written materials that provides a comprehensive guide to understanding and using a particular piece of JavaScript code. 
-The documentation includes detailed explanations of the code's functionality. </p>
+              <p><span class="text-primary">Technical Documentation</span> in JavaScript is a set of written materials
+                that provides a comprehensive guide to understanding and using a particular piece of JavaScript code.
+                The documentation includes detailed explanations of the code's functionality. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <form action="projects/documentation/documentation.html" target="_blank">
