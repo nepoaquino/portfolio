@@ -16,6 +16,7 @@
     crossorigin="anonymous"></script>
 
   <title>Nepo Aquino</title>
+  <link rel="icon" href="img/favicon.PNG" type="image/x-icon">
 
   <style>
     @media (max-width: 900px) {
@@ -88,18 +89,17 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <img src="projectsScreenshot/photoGallery.PNG" class="img-thumbnail"></img>
+            <img src="projectsScreenshot/myCertificates.png" class="img-thumbnail"></img>
             <div class="card-body">
-              <p><span class="text-primary">Flexbox Photo Gallery</span> is a layout model that
-                allows elements to align and distribute space
-                within a container. It's based on a flexible box concept where elements can be arranged in any
-                direction, either vertically or horizontally.</p>
+              <p><span class="text-primary">My Certificates</span> Is a visual showcase of my accomplishments in the
+                fields of web development, programming languages, and more,
+                highlighting the expertise and skills I've gained throughout my career.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <form action="projects/flexBox/FlexBox_PhotoGallery.html" target="_blank">
+                  <form action="https://neppy3250.github.io/certificates/" target="_blank">
                     <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
                   </form>
-                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/flexBox" target="_blank">
+                  <form action="https://github.com/neppy3250/certificates" target="_blank">
                     <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
                   </form>
                 </div>
@@ -282,34 +282,9 @@
     </footer>
   </div>
 
-  <script>
+  <script src="script.js">
 
-    function smoothScroll(event) {
-      event.preventDefault();
-      const targetId = event.currentTarget.getAttribute("href");
-      const targetPosition = document.querySelector(targetId).offsetTop;
-      const startPosition = window.pageYOffset;
-      const distance = targetPosition - startPosition;
-      const duration = 1000;
-      let start = null;
 
-      function animation(currentTime) {
-        if (start === null) start = currentTime;
-        const timeElapsed = currentTime - start;
-        const run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      }
-
-      function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      }
-
-      requestAnimationFrame(animation);
-    }
   </script>
 
 
