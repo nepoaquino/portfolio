@@ -1,293 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta property="og:image" content="img/thumbnail.png" />
+    <meta property="og:title" content="My Personal Portfolio" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:image" content="img/thumbnail.png">
-  <meta property="og:title" content="My Personal Portfolio" />
+    <meta name="author" content="Nepo Aquino" />
 
-  <meta name="author" content="Nepo Aquino">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <title>Nepo Aquino</title>
 
-  <title>Nepo Aquino</title>
-
-
-  <style>
-    @media (max-width: 900px) {
+    <style>
+      body {
+        scroll-behavior: smooth; /* Add smooth scrolling behavior to the entire document */
+      }
+      #lpage {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       #nepo {
-        font-size: 3.5rem;
+        width: 100%;
+        font-size: 5em;
       }
-    }
-  </style>
+    </style>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-black bg-gradient fixed-top"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-baseline fw-bold"
+            href="#mainpage"
+            onclick="smoothScroll(event)"
+          >
+            HOME
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarHeader">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="smoothScroll(event)"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="smoothScroll(event)"
+                  >SERVICES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="smoothScroll(event)"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
+    <main id="mainpage">
+      <section
+        class="py-5 text-center container-fluid text-bg-dark bg-gradient"
+      >
+        <div id="lpage" class="py-lg-5 mt-5">
+          <div class="mx-auto">
+            <h1 id="nepo">Nepo Aquino</h1>
+            <p class="lead text-white fs-2">Aspiring Web Developer</p>
+            <p>
+              <a
+                href="#projects"
+                class="btn btn-primary my-1 mx-1 bg-gradient"
+                onclick="smoothScroll(event)"
+                >View my projects</a
+              >
+              <a
+                href="https://neppy3250.github.io/neporesume/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-secondary my-1 mx-1 bg-gradient"
+                >View my resume</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-black bg-gradient fixed-top">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-baseline fw-bold" href="#mainpage" onclick="smoothScroll(event)">
-          HOME
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarHeader">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0 ">
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="smoothScroll(event)">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="smoothScroll(event)">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="smoothScroll(event)">CONTACT</a>
-            </li>
-          </ul>
+      <div id="projects" class="p-3 bg-dark"></div>
+
+      <div class="album py-5 bg-gradient" id="album">
+        <div class="container">
+          <h2 class="text-black text-center display-5 fw-semibold pb-3 mb-4">
+            These are some of my projects
+          </h2>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- Photo Gallery -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/textBaseRPG.png"
+                  class="img-thumbnail"
+                  alt="certificates"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">TEXT BASE RPG GAME</span>
+                    My text-based RPG game features a unique stat system,
+                    including (STR), (AGI), (INT), (VIT). As a player, you'll
+                    immerse yourself in a world of magic, quests, and adventure,
+                    guiding your character through an enchanting narrative
+                    filled with choices and challenges.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="https://neppy3250.github.io/newRPG/"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/newRPG"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Birdie Bounce -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/birdie.jpg"
+                  class="img-thumbnail"
+                  alt="birdie bounce"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">Birdie Bounce</span> is based on
+                    the popular game "Flappy Bird". In this game, the player
+                    controls a bird that needs to navigate through a series of
+                    obstacles by flapping its wings. The objective is to get the
+                    bird as far as possible without hitting any obstacles.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="https://neppy3250.github.io/birdie-bounce/"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/birdie-bounce"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Color Game Simulator-->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/colorGameSimulator.jpg"
+                  class="img-thumbnail"
+                  alt="color game"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">Color Game Simulator</span> where
+                    the user selects colors and then rolls a set of dice with
+                    random colors. If the colors the user selected match any of
+                    the dice's colors, the user wins. Otherwise, the user loses.
+                    The game keeps track of the user's history of rolls and the
+                    colors they selected.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="https://neppy3250.github.io/colorGameSimulator/"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/colorGameSimulator"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/myCertificates.png"
+                  class="img-thumbnail"
+                  alt="certificates"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">My Certificates</span> Is a
+                    visual showcase of my accomplishments in the fields of web
+                    development, programming languages, and more, highlighting
+                    the expertise and skills I've gained throughout my career.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="https://neppy3250.github.io/certificates/"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/certificates"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/registrationForm.PNG"
+                  class="img-thumbnail"
+                  alt="registrationForm"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">Registration Form</span> that
+                    consists of input fields for the user's name, email address,
+                    and password. The form may also include some client-side
+                    validation to ensure that the user enters valid data before
+                    submitting the form.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="projects/registration/Registration_Form.html"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/portfolio/tree/main/projects/registration"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Documentation -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="projectsScreenshot/documentation.PNG"
+                  class="img-thumbnail"
+                  alt="documentation"
+                />
+                <div class="card-body">
+                  <p>
+                    <span class="text-primary">Technical Documentation</span> in
+                    JavaScript is a set of written materials that provides a
+                    comprehensive guide to understanding and using a particular
+                    piece of JavaScript code. The documentation includes
+                    detailed explanations of the code's functionality.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <form
+                        action="projects/documentation/documentation.html"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-primary m-lg-1 mx-1"
+                        >
+                          View Demo
+                        </button>
+                      </form>
+                      <form
+                        action="https://github.com/neppy3250/portfolio/tree/main/projects/documentation"
+                        target="_blank"
+                      >
+                        <button
+                          type="submit"
+                          class="btn btn-sm btn-outline-secondary m-lg-1 mx-1"
+                        >
+                          View Code
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </main>
 
-
-  <main id="mainpage">
-    <section class="py-5 text-center container-fluid text-bg-dark bg-gradient ">
-      <div id="lpage" class="row py-lg-5 mt-5"
-        style="min-height: 80vh; display: flex; justify-content: center; align-items: center;">
+    <div class="container-fluid text-bg-dark bg-gradient">
+      <section class="py-5 text-center container">
+        <p class="fw-medium display-4">Let's work together...</p>
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-medium display-1 display-md-2 text-nowrap" id="nepo">Nepo Aquino</h1>
-          <p class="lead text-white fs-2">Aspiring Web Developer</p>
           <p>
-            <a href="#projects" class="btn btn-primary my-1 mx-1 bg-gradient" onclick="smoothScroll(event)">View my
-              projects</a>
-            <a href="https://neppy3250.github.io/neporesume/" target="_blank"
-              class="btn btn-secondary my-1 mx-1 bg-gradient">View my resume</a>
+            <a
+              href="https://web.facebook.com/Equinox3250/"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-primary"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+              </svg>
+              Facebook</a
+            >
+
+            <a
+              href="https://www.linkedin.com/in/nepo-aquino"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-primary mx-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                />
+              </svg>
+              Linkedln</a
+            >
+
+            <a
+              href="https://github.com/neppy3250"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-primary my-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+              Github</a
+            >
           </p>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <div id="projects" class="p-3 bg-dark">
-
-  </div>
-
-  <div class="album py-5 bg-gradient " id="album">
-    <div class="container">
-      <h2 class="text-black text-center display-5 fw-semibold pb-3 ">These are some of my projects</h2>
-
-      <!-- Photo Gallery -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/myCertificates.png" class="img-thumbnail"></img>
-            <div class="card-body">
-              <p><span class="text-primary">My Certificates</span> Is a visual showcase of my accomplishments in the
-                fields of web development, programming languages, and more,
-                highlighting the expertise and skills I've gained throughout my career.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="https://neppy3250.github.io/certificates/" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/certificates" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
+      <footer class="py-5 fs-7">
+        <div class="container">
+          <p class="mb-0">
+            Email:
+            <a href="mailto:nepo.comsci@gmail.com">nepo.comsci@gmail.com</a>.
+          </p>
+          <p class="mb-1">&copy; 2023 Nepo Aquino. All Rights Reserved.</p>
+          <p class="float-end mb-1">
+            <a href="#mainpage" onclick="smoothScroll(event)">Back to top</a>
+          </p>
         </div>
-
-        <!-- Birdie Bounce -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/birdie.jpg" class="img-thumbnail"></img>
-            <div class="card-body">
-              <p><span class="text-primary">Birdie Bounce</span> is based on the popular game "Flappy Bird".
-                In this game, the player controls a bird that needs to navigate through a series of obstacles by
-                flapping its wings.
-                The objective is to get the bird as far as possible without hitting any obstacles.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="https://neppy3250.github.io/birdie-bounce/" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/birdie-bounce" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Color Game Simulator-->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/colorGameSimulator.jpg" class="img-thumbnail"></img>
-            <div class="card-body">
-              <p><span class="text-primary">Color Game Simulator</span> where the user selects colors and then rolls a
-                set of dice with random colors. If the colors the user selected match any of the dice's colors, the user
-                wins.
-                Otherwise, the user loses. The game keeps track of the user's history of rolls and the colors they
-                selected.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="https://neppy3250.github.io/colorGameSimulator/" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/colorGameSimulator" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Registration Form -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/registrationForm.PNG" class="img-thumbnail"> </img>
-            <div class="card-body">
-              <p><span class="text-primary">Registration Form</span> that consists of input
-                fields for the user's
-                name, email address, and password. The form may also include some client-side validation to ensure
-                that the user enters valid data before submitting the form.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="projects/registration/Registration_Form.html" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/registration" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-        <!-- Technical Documentation -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/documentation.PNG" class="img-thumbnail"></img>
-            <div class="card-body">
-              <p><span class="text-primary">Technical Documentation</span> in JavaScript is a set of written materials
-                that provides a comprehensive guide to understanding and using a particular piece of JavaScript code.
-                The documentation includes detailed explanations of the code's functionality. </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="projects/documentation/documentation.html" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/documentation"
-                    target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Balance Sheet -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="projectsScreenshot/balanceSheet.PNG" class="img-thumbnail"></img>
-            <div class="card-body">
-              <p><span class="text-primary">Balance Sheet</span> to display financial
-                information
-                in a structured way. The balance sheet consists of two categories, assets and liabilities, with
-                the
-                total for each displayed at the bottom. </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <form action="projects/balance/Balance_Sheet.html" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-primary m-lg-1 mx-1">View Demo</button>
-                  </form>
-                  <form action="https://github.com/neppy3250/portfolio/tree/main/projects/balance" target="_blank">
-                    <button type="submit" class="btn btn-sm btn-outline-secondary m-lg-1 mx-1">View Code</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      </footer>
     </div>
-  </div>
 
-  </main>
-
-  <div class="container-fluid text-bg-dark bg-gradient ">
-
-    <section class="py-5 text-center container">
-      <p class="fw-medium display-4">Let's work together...</p>
-      <div class="col-lg-6 col-md-8 mx-auto">
-
-        <p>
-          <a href="https://web.facebook.com/Equinox3250/" target="_blank" class="btn btn-outline-primary ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-            </svg>
-            Facebook</a>
-
-          <a href="https://www.linkedin.com/in/nepo-aquino" target="_blank" class="btn btn-outline-primary mx-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-              viewBox="0 0 16 16">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg>
-            Linkedln</a>
-
-          <a href="https://github.com/neppy3250" target="_blank" class="btn btn-outline-primary  my-2 ">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-            Github</a>
-        </p>
-      </div>
-    </section>
-
-    <footer class="py-5 fs-7">
-      <div class="container">
-
-        <p class="mb-0">Email: <a href="mailto:nepo.comsci@gmail.com">nepo.comsci@gmail.com</a>.</p>
-        <p class="mb-1">&copy; 2023 Nepo Aquino. All Rights Reserved. </p>
-        <p class="float-end mb-1">
-          <a href="#mainpage" onclick="smoothScroll(event)">Back to top</a>
-        </p>
-      </div>
-    </footer>
-  </div>
-
-  <script src="script.js">
-
-
-  </script>
-
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
