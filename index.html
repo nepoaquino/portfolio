@@ -39,8 +39,15 @@
 
       #nepo {
         width: 100%;
-        font-size: 12vmin;
-        margin-bottom: 20px;
+        font-size: 15vmin;
+        margin-bottom: 5vh;
+      }
+      #contactInfo {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
       }
     </style>
   </head>
@@ -427,13 +434,10 @@
       </div>
     </main>
 
-    <div
-      class="container-fluid text-bg-dark bg-gradient d-flex flex-column"
-      id="contactInfo"
-    >
-      <section class="text-center container">
-        <p class="fw-medium display-4">Let's work together...</p>
-        <div class="col-lg-6 col-md-8 mx-auto">
+    <div class="container-fluid text-bg-dark bg-gradient d-flex flex-column">
+      <section class="text-center container" id="contactInfo">
+        <p class="fw-medium display-3">Let's work together...</p>
+        <div class="mb-4">
           <p>
             <a
               href="https://web.facebook.com/Equinox3250/"
@@ -501,14 +505,14 @@
         </div>
       </section>
 
-      <footer class="py-5 fs-7">
+      <footer class="fs-7">
         <div class="container">
           <p class="mb-0">
             Email:
             <a href="mailto:nepo.comsci@gmail.com">nepo.comsci@gmail.com</a>.
           </p>
-          <p class="mb-1">&copy; 2023 Nepo Aquino. All Rights Reserved.</p>
-          <p class="float-end mb-1">
+          <p>&copy; 2023 Nepo Aquino. All Rights Reserved.</p>
+          <p class="float-end">
             <a href="#mainpage" onclick="smoothScroll(event)">Back to top</a>
           </p>
         </div>
