@@ -30,7 +30,7 @@
         scroll-behavior: smooth; /* Add smooth scrolling behavior to the entire document */
       }
       #lpage {
-        height: 80svh;
+        height: 100svh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -39,7 +39,7 @@
 
       #nepo {
         width: 100%;
-        font-size: 15vmin;
+        font-size: 12vmin;
         margin-bottom: 20px;
       }
     </style>
@@ -72,17 +72,26 @@
           <div class="collapse navbar-collapse" id="navbarHeader">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="smoothScroll(event)"
+                <a
+                  class="nav-link"
+                  href="#mainpage"
+                  onclick="smoothScroll(event)"
                   >ABOUT</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="smoothScroll(event)"
-                  >SERVICES</a
+                <a
+                  class="nav-link"
+                  href="#projects"
+                  onclick="smoothScroll(event)"
+                  >PROJECTS</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" onclick="smoothScroll(event)"
+                <a
+                  class="nav-link"
+                  href="#contactInfo"
+                  onclick="smoothScroll(event)"
                   >CONTACT</a
                 >
               </li>
@@ -93,12 +102,10 @@
     </header>
 
     <main id="mainpage">
-      <section
-        class="py-5 text-center container-fluid text-bg-dark bg-gradient"
-      >
-        <div id="lpage" class="py-lg-5 mt-5">
+      <section class="text-center container-fluid text-bg-dark bg-gradient">
+        <div id="lpage">
           <h1 id="nepo">Nepo Aquino</h1>
-          <div class="mx-auto">
+          <div class="">
             <p class="lead text-white fs-2">Aspiring Web Developer</p>
             <p>
               <a
@@ -420,7 +427,7 @@
       </div>
     </main>
 
-    <div class="container-fluid text-bg-dark bg-gradient">
+    <div class="container-fluid text-bg-dark bg-gradient" id="contactInfo">
       <section class="py-5 text-center container">
         <p class="fw-medium display-4">Let's work together...</p>
         <div class="col-lg-6 col-md-8 mx-auto">
