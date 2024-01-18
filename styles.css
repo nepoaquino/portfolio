@@ -1,0 +1,24 @@
+body {
+  scroll-behavior: smooth; /* Add smooth scrolling behavior to the entire document */
+}
+#lpage {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#nepo {
+  width: 100%;
+  font-size: 15vmin;
+  margin-bottom: 5vh;
+}
+#contactInfo {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
